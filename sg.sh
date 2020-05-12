@@ -16,12 +16,16 @@ do
     echo "Commands:"
   elif [ $com = "sg prep" ]
     echo "Preparing the repo for GitHub."
-    echo "When you get to the commit screen, type your message and press CTRL + X and then ENTER."
-    sleep 5
+    sleep 2
     git add .
-    git commit
-  elif [ $com = "sg exp" ]
-    echo "Exporting..."
+    git commit -m "first commit"
+  elif [ $com = "sg setup" ]
+    echo "Configuring..."
+    read -p "What is your username?" usr
+    read -p "What is your repo name?" rpo
+    git remote add origin https://github.com/${usr}/${rpo}.git
+    sleep 2
+    echo "Repo is now ready. To add all files, run sg exp"
   else
     echo "Command not found. Try sg help?"
   fi
