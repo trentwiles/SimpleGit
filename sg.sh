@@ -10,7 +10,7 @@ echo "   "
 while true
 do
   read -p ">>>>" com
-  if [[$com == "ok"]]
+  if [[$com -eq "ok"]]
   then 
     echo "Good"
   else
