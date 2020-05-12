@@ -26,6 +26,8 @@ do
     git remote add origin https://github.com/${usr}/${rpo}.git
     sleep 2
     echo "Repo is now ready. To add all files, run sg exp"
+  elif [ $com = "sg setup" ]
+    echo "ok"
   else
     echo "Command not found. Try sg help?"
   fi
