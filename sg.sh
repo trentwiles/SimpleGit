@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "   "
 echo "   "
 echo "Simple Git"
@@ -6,9 +7,13 @@ echo "________________"
 echo "Version v0.1"
 echo "   "
 echo "   "
-echo ">>>>"
-x=1
 while true
 do
-  read "com"
+  read -p ">>>>" com
+  if [[$com == "ok"]]
+  then 
+    echo "Good"
+  else
+    echo "Bad"
+  fi
 done
