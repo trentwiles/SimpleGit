@@ -53,8 +53,11 @@ do
     git push -u origin master
   elif [ "$com" = "sg update" ]
     then
-    echo "Updating your project from the github repo. Make sure you have already run sg setup."
-    git pull remote master
+    echo "Updating your project from the github repo."
+    sleep 2
+    read -p "What is your username?" usr
+    read -p "What is your repo name?" rpo
+    git pull https://github.com/${usr}/${rpo} master
   else
     echo "Command not found. Try sg help?"
   fi

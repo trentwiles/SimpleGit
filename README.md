@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Git
 *Git, but simpler.*
 
@@ -17,3 +18,7 @@ Run:
 <br>
 <br>
 `sg exp` --> Exports files to GitHub.
+=======
+# SimpleGit
+Git made easier
+>>>>>>> bb046c933849ea08fef6dc06b80abf4812990545
