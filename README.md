@@ -2,6 +2,8 @@
 *Git, but simpler.*
 <br>
 A Git simplified build for Glitch.
+<br>
+Created by RiversideRocks
 
 ## Install
 Download:
