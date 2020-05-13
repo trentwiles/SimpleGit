@@ -5,14 +5,14 @@ echo "   "
 echo "Simple Git"
 echo "Git made easier."
 echo "________________"
-echo "Version v0.1"
+echo "Version v0.2"
 echo "   "
 echo "Run sg help for help. You must have git installed for Simple Git to work."
 echo "   "
 while true
 do
   read -p ">>>>" com
-  if [ $com = "sg help" ]
+  if [ "$com" = "sg help" ]
   then 
     echo "Commands:"
     echo "sg prep --> Prepare your project for GitHub"
@@ -30,12 +30,13 @@ do
     echo "Configuring..."
     read -p "What is your username?" usr
     read -p "What is your repo name?" rpo
-    git remote add origin https://github.com/${usr}/${rpo}.git
+    git remote add -f origin https://github.com/${usr}/${rpo}.git
     sleep 2
     echo "Repo is now ready. To add all files, run sg exp"
   elif [ "$com" = "sg exp" ]
     then
     echo "Exporting to GitHub.com"
+    echo "You will need to enter your GitHub username and password."
     sleep 2
     git push -u origin master
   elif [ "$com" = "sg quick" ]
@@ -50,6 +51,10 @@ do
     git commit -m "first commit"
     echo "Ready for GitHub!"
     git push -u origin master
+  elif [ "$com" = "sg update" ]
+    then
+    echo "Updating your project from the github repo. Make sure you have already run sg setup."
+    git pull remote master
   else
     echo "Command not found. Try sg help?"
   fi
