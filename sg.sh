@@ -35,21 +35,13 @@ do
     echo "Repo is now ready. To add all files, run sg exp"
   elif [ "$com" = "sg exp" ]
     then
+    echo "Setting Up..."
+    sleep 2
+    git add .
+    git commit -m "Exported with Simple git"
     echo "Exporting to GitHub.com"
     echo "You will need to enter your GitHub username and password."
     sleep 2
-    git push -u origin master
-  elif [ "$com" = "sg quick" ]
-    then
-    echo "Quick Eport begining."
-    sleep 2
-    read -p "What is your username?" usr
-    read -p "What is your repo name?" rpo
-    git remote add origin https://github.com/${usr}/${rpo}.git
-    sleep 2
-    git add .
-    git commit -m "Exported with Simple Git"
-    echo "Ready for GitHub!"
     git push -u origin master
   elif [ "$com" = "sg update" ]
     then

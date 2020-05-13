@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 # Simple Git
 *Git, but simpler.*
+<br>
+A Git simplified build for Glitch.
 
 ## Install
 Download:
@@ -18,7 +19,14 @@ Run:
 <br>
 <br>
 `sg exp` --> Exports files to GitHub.
-=======
-# SimpleGit
-Git made easier
->>>>>>> bb046c933849ea08fef6dc06b80abf4812990545
+<br>
+<br>
+`sg update` --> Makes the remote repo and the repo even.
+## Quick Start
+(1. sg setup
+<br>
+<br>
+(2. sg exp
+<br>
+<br>
+And that is it!
