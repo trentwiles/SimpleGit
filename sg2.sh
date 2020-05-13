@@ -1,4 +1,5 @@
 # DO NOT USE THIS!
+# This is for testing only!
 while true
 do
   read -p ">>>>" com

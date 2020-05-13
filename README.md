@@ -8,3 +8,12 @@ Download:
 <br>
 Run:
 `bash sg.sh`
+
+## Usage
+`sg prep` --> Prepare your project for GitHub
+<br>
+<br>
+`sg setup` --> Prepares your files for GitHub
+<br>
+<br>
+`sg exp` --> Exports files to GitHub.
