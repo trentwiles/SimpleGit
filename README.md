@@ -1,0 +1,2 @@
+# SimpleGit
+Git made easier
