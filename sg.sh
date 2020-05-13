@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "   "
 echo "   "
 echo "Simple Git"
@@ -19,11 +20,13 @@ do
     echo "sq exp --> Exports files to GitHub."
     echo "Instructions: If this is your first time, run"
   elif [ $com = "sg prep" ]
+    then
     echo "Preparing the repo for GitHub."
     sleep 2
     git add .
     git commit -m "first commit"
   elif [ $com = "sg setup" ]
+    then
     echo "Configuring..."
     read -p "What is your username?" usr
     read -p "What is your repo name?" rpo
@@ -31,10 +34,12 @@ do
     sleep 2
     echo "Repo is now ready. To add all files, run sg exp"
   elif [ $com = "sg exp" ]
+    then
     echo "Exporting to GitHub.com"
     sleep 2
     git push -u origin master
   elif [ $com = "sg quick" ]
+    then
     echo "Quick Eport begining."
     sleep 2
     read -p "What is your username?" usr
