@@ -24,7 +24,7 @@ do
     echo "Preparing the repo for GitHub."
     sleep 2
     git add .
-    git commit -m "first commit"
+    git commit -m "Exported with Simple git"
   elif [ "$com" = "sg setup" ]
     then
     echo "Configuring..."
@@ -48,7 +48,7 @@ do
     git remote add origin https://github.com/${usr}/${rpo}.git
     sleep 2
     git add .
-    git commit -m "first commit"
+    git commit -m "Exported with Simple Git"
     echo "Ready for GitHub!"
     git push -u origin master
   elif [ "$com" = "sg update" ]
