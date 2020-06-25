@@ -5,9 +5,9 @@ echo "   "
 echo "Simple Git"
 echo "Git made easier."
 echo "________________"
-echo "Version v0.2"
+echo "Version v0.2.1"
 echo "   "
-echo "Run sg help for help. You must have git installed for Simple Git to work."
+echo -e "${green}Run sg help for help. You must have git installed for Simple Git to work."
 echo "   "
 while true
 do
